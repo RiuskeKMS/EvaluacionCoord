@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recipe_info_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        style="?attr/materialCardViewElevatedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/idCtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:text="ID"
+                android:textSize="75dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+
+            <TextView
+                android:id="@+id/nombrestv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="Nombres:"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/idCtv"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/facultadtv"/>
+
+            <TextView
+                android:id="@+id/apellidostv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Apellidos:"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/nombrestv"
+                app:layout_constraintTop_toBottomOf="@+id/nombrestv" />
+
+            <TextView
+                android:id="@+id/fechaNactv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Fecha de nacimiento:"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/apellidostv"
+                app:layout_constraintTop_toBottomOf="@+id/apellidostv" />
+
+            <TextView
+                android:id="@+id/titulotv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Titulo:"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/fechaNactv"
+                app:layout_constraintTop_toBottomOf="@+id/fechaNactv" />
+
+            <TextView
+                android:id="@+id/emailtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Email:"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/titulotv"
+                app:layout_constraintTop_toBottomOf="@+id/titulotv" />
+
+            <TextView
+                android:id="@+id/facultadtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Facultad:"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/emailtv"
+                app:layout_constraintTop_toBottomOf="@+id/emailtv" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="#efefef"
+                android:layout_marginTop="28dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/facultadtv" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="#efefef"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
